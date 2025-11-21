@@ -1,4 +1,4 @@
-# AI Data Analyst Assistant
+# 🤖 AI Data Analyst Assistant
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.51.0-red.svg)](https://streamlit.io/)
@@ -186,7 +186,7 @@ Processes and manages chat interactions:
 - **Recruitment Analytics**: Track hiring metrics and optimize recruitment processes
 - **Retention Analysis**: Identify factors affecting employee turnover
 
-## 🔒 Security
+## 🛡️ Security
 
 ### Data Privacy
 - **Local Processing**: All data processing happens locally on your machine
@@ -197,6 +197,10 @@ Processes and manages chat interactions:
 - **Environment Variables**: API keys are stored securely in environment variables
 - **Encrypted Connections**: All API communications use HTTPS encryption
 - **Key Rotation**: Regular rotation of API keys recommended
+- **No external data transfer**
+- **Safe session management**
+
+
 
 ### Access Control
 - **Single User**: Designed for individual use with no multi-user access
@@ -214,21 +218,6 @@ Processes and manages chat interactions:
 - **This README**: Comprehensive project documentation
 - **Code Comments**: Detailed comments in source code files
 - **Inline Help**: Tooltips and guidance within the application
-
-### Community Support
-- **GitHub Issues**: Report bugs and request features
-- **Discussion Forums**: Community-driven support and knowledge sharing
-- **Contribution Guidelines**: Information on how to contribute to the project
-
-### Professional Support
-- **Email Support**: Contact maintainers for critical issues
-- **Consulting Services**: Available for enterprise deployments
-- **Training Programs**: Workshops and tutorials for advanced usage
-
-### Troubleshooting
-- **Common Issues**: Solutions for frequently encountered problems
-- **Error Messages**: Guide to understanding and resolving error messages
-- **System Requirements**: Ensure your system meets all requirements
 
 ### Updates & Maintenance
 - **Version Tracking**: Keep track of releases and updates
@@ -382,3 +371,4 @@ This project is licensed under the GNU License - see the [LICENSE](LICENSE) file
 ---
 
 *Transforming Data Chaos Into Clarity*
+
