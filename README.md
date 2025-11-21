@@ -14,6 +14,9 @@ An intelligent data analysis platform that automates exploratory data analysis, 
 - [Agents Overview](#agents-overview)
 - [Memory System](#memory-system)
 - [Utilities](#utilities)
+- [Use Cases](#use-cases)
+- [Security](#security)
+- [Support](#support)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
@@ -156,6 +159,82 @@ Processes and manages chat interactions:
 - Context management
 - Follow-up question handling
 
+## 🎯 Use Cases
+
+### Business Analytics
+- **Market Research**: Analyze customer behavior patterns and market trends
+- **Sales Performance**: Identify top-performing products and seasonal trends
+- **Financial Analysis**: Detect anomalies in financial data and forecast trends
+
+### Academic Research
+- **Data Cleaning**: Preprocess research datasets for analysis
+- **Statistical Analysis**: Generate descriptive statistics for research papers
+- **Visualization**: Create publication-ready charts and graphs
+
+### Healthcare
+- **Patient Data Analysis**: Identify patterns in patient records and treatment outcomes
+- **Clinical Trials**: Analyze trial data for efficacy and safety
+- **Epidemiology**: Track disease patterns and outbreak analysis
+
+### E-commerce
+- **Customer Segmentation**: Analyze customer demographics and purchasing behavior
+- **Inventory Management**: Predict demand patterns and optimize stock levels
+- **Pricing Strategy**: Analyze competitor pricing and market positioning
+
+### Human Resources
+- **Employee Performance**: Analyze performance metrics and identify improvement areas
+- **Recruitment Analytics**: Track hiring metrics and optimize recruitment processes
+- **Retention Analysis**: Identify factors affecting employee turnover
+
+## 🔒 Security
+
+### Data Privacy
+- **Local Processing**: All data processing happens locally on your machine
+- **No Data Storage**: No user data is stored on external servers
+- **Ephemeral Sessions**: Data is cleared when the session ends
+
+### API Security
+- **Environment Variables**: API keys are stored securely in environment variables
+- **Encrypted Connections**: All API communications use HTTPS encryption
+- **Key Rotation**: Regular rotation of API keys recommended
+
+### Access Control
+- **Single User**: Designed for individual use with no multi-user access
+- **Local Deployment**: Runs locally, eliminating network-based attacks
+- **File System Permissions**: Respects OS-level file permissions
+
+### Best Practices
+- **Regular Updates**: Keep all dependencies updated to latest secure versions
+- **Input Validation**: All file uploads are validated for type and size
+- **Error Handling**: Secure error handling that doesn't expose sensitive information
+
+## 🆘 Support
+
+### Documentation
+- **This README**: Comprehensive project documentation
+- **Code Comments**: Detailed comments in source code files
+- **Inline Help**: Tooltips and guidance within the application
+
+### Community Support
+- **GitHub Issues**: Report bugs and request features
+- **Discussion Forums**: Community-driven support and knowledge sharing
+- **Contribution Guidelines**: Information on how to contribute to the project
+
+### Professional Support
+- **Email Support**: Contact maintainers for critical issues
+- **Consulting Services**: Available for enterprise deployments
+- **Training Programs**: Workshops and tutorials for advanced usage
+
+### Troubleshooting
+- **Common Issues**: Solutions for frequently encountered problems
+- **Error Messages**: Guide to understanding and resolving error messages
+- **System Requirements**: Ensure your system meets all requirements
+
+### Updates & Maintenance
+- **Version Tracking**: Keep track of releases and updates
+- **Migration Guides**: Instructions for upgrading between versions
+- **Deprecation Notices**: Advance notice of feature removals
+
 ## 📦 Installation
 
 ### Prerequisites
@@ -288,17 +367,6 @@ Capstone-Project/
    - Audit trails and compliance
    - Custom branding and theming
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can contribute:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-Please ensure your code follows the existing style and includes appropriate tests.
 
 ## 📄 License
 
