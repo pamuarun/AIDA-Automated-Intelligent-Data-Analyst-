@@ -11,8 +11,9 @@ An intelligent data analysis platform that automates exploratory data analysis, 
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technology Stack](#technology-stack)
-- [Architecture](#architecture)
 - [Agents Overview](#agents-overview)
+- [Memory System](#memory-system)
+- [Utilities](#utilities)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
@@ -52,7 +53,6 @@ The platform features a beautiful dark-themed interface with animated elements, 
 
 ### Reporting & Visualization
 - **Interactive Dashboard**: Real-time KPI cards and data summaries
-- **Exportable Reports**: PDF and DOCX report generation
 - **Chat Interface**: Ask questions about your data and get AI-powered responses
 - **Visualization Gallery**: Comprehensive collection of data visualizations
 
@@ -77,54 +77,12 @@ The platform features a beautiful dark-themed interface with animated elements, 
 - **Feature Engine**: Feature engineering and data preprocessing
 
 ### Utilities & Tools
-- **ReportLab**: PDF report generation
-- **python-docx**: DOCX document creation
 - **dotenv**: Environment variable management
 - **SciPy**: Scientific computing and statistics
 
 ### Frontend Enhancements
 - **HTML/CSS**: Custom styling and animations
 - **JavaScript**: Interactive elements (through Streamlit)
-
-## 🏗️ Architecture
-
-The system follows a multi-agent architecture where each agent specializes in a specific aspect of the data analysis pipeline:
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    User Interface (Streamlit)               │
-└─────────────────────────────┬───────────────────────────────┘
-                              │
-┌─────────────────────────────▼───────────────────────────────┐
-│                      Orchestrator Agent                     │
-│  Coordinates all agents and manages data flow               │
-└─────────────────────────────┬───────────────────────────────┘
-                              │
-        ┌─────────────────────┼─────────────────────┐
-        │                     │                     │
-┌───────▼────────┐   ┌────────▼────────┐   ┌───────▼────────┐
-│   EDA Agent    │   │ Cleaning Agent  │   │ Insights Agent │
-│ - Statistics   │   │ - Imputation    │   │ - AI Analysis  │
-│ - Visualizations│   │ - Outlier Handling│   │ - Q&A Chat   │
-└───────┬────────┘   └────────┬────────┘   └───────┬────────┘
-        │                     │                     │
-        └─────────────────────┼─────────────────────┘
-                              │
-                    ┌─────────▼─────────┐
-                    │ Reporting Agent   │
-                    │ - PDF Generation  │
-                    │ - DOCX Generation │
-                    └───────────────────┘
-```
-
-### Key Components
-
-1. **Orchestrator Agent**: Central coordinator that manages the workflow between all agents
-2. **EDA Agent**: Performs exploratory data analysis and generates visualizations
-3. **Cleaning Agent**: Handles data preprocessing tasks like imputation and outlier treatment
-4. **Insights Agent**: Leverages AI to generate insights and answer user questions
-5. **Reporting Agent**: Creates professional reports in PDF and DOCX formats
-6. **Memory System**: Manages session and long-term data storage
 
 ## 🤖 Agents Overview
 
@@ -159,12 +117,44 @@ Provides AI-powered analysis using Google's Gemini:
 - Provides business impact analysis
 - Answers user questions through chat interface
 
-### 5. Reporting Agent
-Creates professional reports:
-- Generates PDF reports with visualizations
-- Creates DOCX documents with analysis results
-- Includes executive summaries and cleaning reports
-- Embeds correlation heatmaps and other key visualizations
+## 🧠 Memory System
+
+### Session Memory
+Manages temporary data storage during user sessions:
+- Stores EDA results and visualizations
+- Maintains cleaned datasets
+- Keeps track of chat history
+- Manages intermediate processing results
+
+### Long Term Memory
+Handles persistent data storage:
+- Stores user preferences and settings
+- Maintains historical analysis results
+- Keeps record of frequently used queries
+- Manages template configurations
+
+## 🛠️ Utilities
+
+### Plot Utilities
+Helper functions for creating visualizations:
+- `fig_to_png_bytes()`: Converts matplotlib figures to PNG byte streams
+- `distribution_plot()`: Creates distribution plots with KDE
+- `box_plot()`: Generates box plots for outlier visualization
+- `correlation_heatmap()`: Creates correlation matrix heatmaps
+
+### File Utilities
+Functions for file handling and processing:
+- Dataset loading and validation
+- File format detection (CSV, Excel)
+- Temporary file management
+- Path resolution utilities
+
+### Chatbot Parser
+Processes and manages chat interactions:
+- Natural language query parsing
+- Response formatting
+- Context management
+- Follow-up question handling
 
 ## 📦 Installation
 
@@ -230,10 +220,6 @@ Creates professional reports:
    - Get AI-powered insights and explanations
    - Request specific analyses or visualizations
 
-6. **Export Reports**:
-   - Download PDF or DOCX reports of your analysis
-   - Share findings with stakeholders
-
 ## 📁 Project Structure
 
 ```
@@ -243,7 +229,6 @@ Capstone-Project/
 │   ├── eda_agent.py           # Exploratory data analysis
 │   ├── cleaning_agent.py      # Data cleaning operations
 │   ├── insights_agent.py      # AI-powered insights
-│   ├── reporting_agent.py     # Report generation
 │   └── memory/                # Memory management
 │       ├── session_memory.py
 │       └── long_term_memory.py
@@ -317,7 +302,7 @@ Please ensure your code follows the existing style and includes appropriate test
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -327,6 +312,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - All contributors who have helped shape this project
 
 ---
-
 
 *Transforming Data Chaos Into Clarity*
