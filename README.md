@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.51.0-red.svg)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-GNU-green.svg)](LICENSE)
 
 An intelligent data analysis platform that automates exploratory data analysis, data cleaning, and generates actionable insights using AI-powered agents. Built with Python, Streamlit, and Google's Gemini AI.
 
@@ -327,5 +327,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - All contributors who have helped shape this project
 
 ---
+
 
 *Transforming Data Chaos Into Clarity*
