@@ -284,7 +284,7 @@ Processes and manages chat interactions:
    - Explore categorical distributions
 
 5. **Ask Questions**:
-   - Use the chat interface to ask questions about your data
+   - Use  chat interface to ask questions about your data
    - Get AI-powered insights and explanations
    - Request specific analyses or visualizations
 
