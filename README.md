@@ -43,7 +43,7 @@ The platform features a beautiful dark-themed interface with animated elements, 
 - **Data Profiling**: Automatic detection of data types, missing values, and duplicates
 
 ### Data Cleaning & Preprocessing
-- **Missing Value Imputation**: Intelligent imputation using mean, median, or mode
+- **Missing Value Imputation**: Intelligent imputation using mean, median, and mode
 - **Outlier Handling**: Winsorization technique for outlier treatment
 - **Duplicate Removal**: Automatic detection and removal of duplicate records
 - **Low Variance Filtering**: Removal of columns with minimal variance
